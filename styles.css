@@ -1,0 +1,122 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.game-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 200px;
+}
+
+.score-container {
+    background: #000;
+    padding: 15px;
+    border: 2px solid #00f;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.score-label {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#score, #level {
+    color: #ff0;
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.word-container {
+    background: #000;
+    padding: 15px;
+    border: 2px solid #00f;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 50px;
+}
+
+#word {
+    color: #ff0;
+    font-size: 18px;
+    margin: 0;
+    word-wrap: break-word;
+    min-height: 24px;
+}
+
+canvas {
+    border: 4px solid #00f;
+    border-radius: 10px;
+    background: #000;
+}
+
+#tetris {
+    margin-right: 20px;
+}
+
+#next {
+    border: 2px solid #00f;
+    margin-top: 20px;
+}
+
+/* Добавляем анимацию для Пакмана */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.score-flash {
+    animation: blink 0.5s;
+}
+
+/* Стили для загрузочного экрана */
+.loading-container {
+    background: rgba(0, 0, 0, 0.9);
+    border: 4px solid #00f;
+    border-radius: 15px;
+    padding: 30px;
+    color: #ff0;
+    text-align: center;
+}
+
+.loading-container button {
+    background: #00f;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.loading-container button:hover {
+    background: #0077ff;
+}
+
+/* Добавляем стили для точек */
+.dot {
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+} 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tetris Pacman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-info">
+            <div class="score-container">
+                <div class="score-label">ОЧКИ</div>
+                <div id="score">0</div>
+                <div class="score-label">УРОВЕНЬ</div>
+                <div id="level">1</div>
+            </div>
+            <div class="word-container">
+                <div class="score-label">СЛОВО</div>
+                <div id="word"></div>
+            </div>
+            <canvas id="next" width="160" height="160"></canvas>
+        </div>
+        <canvas id="tetris" width="320" height="640"></canvas>
+    </div>
+    
+    <script src="letters.js"></script>
+    <script src="dictionary.js"></script>
+    <script src="pacman.js"></script>
+    <script src="tetris.js"></script>
+</body>
+</html> 
